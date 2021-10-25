@@ -149,7 +149,7 @@ func txCommand() *cobra.Command {
 		flags.LineBreak,
 		vestingcli.GetTxCmd(),
 	)
-
+	//
 	app.ModuleBasics.AddTxCommands(cmd)
 	cmd.PersistentFlags().String(flags.FlagChainID, "", "The network chain ID")
 
